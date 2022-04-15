@@ -47,3 +47,15 @@ span
     border: none;
 }
 
+.modal-header
+ {
+     padding:9px 15px;
+     
+     background-color:cadetblue;
+ }
+ .modal-header .close{margin-top:2px}
+ .modal-header h3{margin:0;line-height:30px}
+ .modal-body
+ {
+     background-color: cadet;
+ }
