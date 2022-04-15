@@ -10,7 +10,7 @@ import { PrimFactorizationComponent } from './prim-factorization/prim-factorizat
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { DocumentationComponent } from './documentation/documentation.component';
-import { NavComponent } from './nav/nav.component';
+
 import { AngularDocumentationComponent } from './angular-documentation/angular-documentation.component';
 import { PrimeFactorizationDocumentationComponent } from './prime-factorization-documentation/prime-factorization-documentation.component';
 
@@ -20,7 +20,6 @@ import { PrimeFactorizationDocumentationComponent } from './prime-factorization-
     PrimFactorizationComponent,
     HomeComponent,
     DocumentationComponent,
-    NavComponent,
     AngularDocumentationComponent,
     PrimeFactorizationDocumentationComponent
   ],

@@ -8,6 +8,7 @@ import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 })
 export class PrimFactorizationComponent implements OnInit {
 
+  parsedNumber!: number;
   number_to_be_factorized!: number;
   final_answer: string = '';
   step_by_step: string = '';
@@ -19,12 +20,18 @@ export class PrimFactorizationComponent implements OnInit {
   }
 
   calculate(x: number){
+    this.parsedNumber = parseInt(x.toString());
+
     this.final_answer = '';
     this.step_by_step = 'Step by step: <br>';
 
     let factor = 2;
     let factor_power = 0;
 
+    if(x<=0)
+    {
+      this.step_by_step = ''
+    }
     while(x > 1){
       while(x % factor === 0){
         let res = x / factor;
@@ -53,3 +60,7 @@ export class PrimFactorizationComponent implements OnInit {
     window.location.reload();
   }
 }
+function template(template: any): BsModalRef<any> {
+  throw new Error('Function not implemented.');
+}
+
