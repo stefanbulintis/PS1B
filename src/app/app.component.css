@@ -10,9 +10,9 @@
     height: 100vh;
     margin: 0;
     padding: 20px 0;
-    display: flexbox;
+    display:flow-root;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     background: linear-gradient(235deg,#ff005e, #010615, #fbff00);
 }
 

@@ -31,7 +31,7 @@ button
     margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
-    border: 2px solid #ff005e;
+    border: 3px solid #fbff00;
     background: transparent;
     color: white;
     cursor: pointer;
@@ -42,7 +42,7 @@ button
 
 span
 {
-    background: #ff005e;
+    background: linear-gradient(235deg,#ff005e, #fbff00 70%);
     height: 100%;
     width: 0;
     border-radius: 25px;
@@ -61,5 +61,6 @@ button:hover span
 button:hover
 {
     border: none;
-}
+} 
+
 

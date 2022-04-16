@@ -1,4 +1,4 @@
-body
+.content
 {
     width: 30%;
     position:absolute;
@@ -17,7 +17,7 @@ body
     margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
-    border: 2px solid #ff005e;
+    border: 3px solid #ff005e;
     background: transparent;
     color: white;
     cursor: pointer;
@@ -27,7 +27,7 @@ body
 
 span
 {
-    background: #ff005e;
+    background: linear-gradient(235deg,#fbff00,#ff005e 90%);
     height: 100%;
     width: 0;
     border-radius: 25px;
@@ -48,15 +48,13 @@ span
     border: none;
 }
 
-.modal-header
- {
-     padding:9px 15px;
-     
-     background-image: linear-gradient( 235deg, #2AFADF 10%, #4C83FF 100%);
- }
- .modal-header .close{margin-top:2px}
- .modal-header h3{margin:0;line-height:30px}
- .modal-body
- {
-    background-image: linear-gradient( 235deg, #2AFADF 10%, #4C83FF 100%);
- }
+.modal-header{
+    background-image: linear-gradient( 135deg,#F8D800 30%,#FDEB71 10%);
+    
+}
+
+.modal-body{
+   
+    background-color: #FDEB71;
+}
+
