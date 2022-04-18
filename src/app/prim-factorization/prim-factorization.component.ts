@@ -19,8 +19,18 @@ export class PrimFactorizationComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  calculate(x: number){
-    this.parsedNumber = parseInt(x.toString());
+  calculate(x: string){
+
+    // check if it contains only numbers
+    var expr = /^[0-9]*$/;
+
+    if(!expr.test(x.toString())) 
+    {
+      this.step_by_step = 'Please insert a number';
+      return;
+    }
+
+    this.parsedNumber = parseInt(x);
 
     this.final_answer = '';
     this.step_by_step = 'Step by step: <br>';
@@ -28,18 +38,19 @@ export class PrimFactorizationComponent implements OnInit {
     let factor = 2;
     let factor_power = 0;
 
-    if(x<=0)
+    if(this.parsedNumber <= 0)
     {
       this.step_by_step = ''
     }
-    while(x > 1){
-      while(x % factor === 0){
-        let res = x / factor;
+
+    while(this.parsedNumber > 1){
+      while(this.parsedNumber % factor === 0){
+        let res = this.parsedNumber / factor;
         factor_power ++;
 
         this.step_by_step += x.toString() + " % " + factor.toString() + " = " + res.toString() + " ( " + factor.toString() + " ^ " + factor_power.toString() + " )<br>";
 
-        x = x / factor;
+        this.parsedNumber = this.parsedNumber / factor;
       }
 
       if(factor_power > 0) this.final_answer = this.final_answer + factor + ' ^ ' + factor_power +  ' * ';
