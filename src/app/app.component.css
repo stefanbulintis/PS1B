@@ -12,8 +12,23 @@
     padding: 20px 0;
     display:flow-root;
     align-items: center;
-    justify-content: flex-end;
-    background: linear-gradient(235deg,#ff005e, #010615, #fbff00);
+    justify-content: space-between;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #40E0D0, #DFFF00);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .logo
@@ -29,7 +44,6 @@ ul li
     display: inline-block;
     margin: 0 20px;
     position: relative;
-    
 }
 
 ul li a
@@ -37,7 +51,6 @@ ul li a
     text-decoration: none;
     color:white;
     text-transform: uppercase;
-    
 }
 
 ul li::after
