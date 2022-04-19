@@ -10,8 +10,9 @@
     height: 100vh;
     margin: 0;
     padding: 20px 0;
-    display:flow-root;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
     justify-content: space-between;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #40E0D0, #DFFF00);
 	background-size: 400% 400%;
@@ -43,6 +44,7 @@ ul li
     list-style:none;
     display: inline-block;
     margin: 0 20px;
+    right:50px;
     position: relative;
 }
 
@@ -68,3 +70,4 @@ ul li:hover::after
 {
     width: 100%;
 }
+

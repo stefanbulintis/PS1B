@@ -1,4 +1,4 @@
-<form>
+<form id="myForm">
   <div class ="content">
     <div class="d-flex justify-content-center mt-5">
         <h4 class="mt-2 text-white">Type an input: </h4>
@@ -10,6 +10,7 @@
                 [(ngModel)]="number_to_be_factorized" 
                 id="number_to_be_factorized" 
                 name="number_to_be_factorized" 
+                onfocus="this.value=''"
                 placeholder="Enter number"></div>
 
             <div class="p-2">

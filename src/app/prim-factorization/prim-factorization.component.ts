@@ -23,25 +23,33 @@ export class PrimFactorizationComponent implements OnInit {
 
     // check if it contains only numbers
     var expr = /^[0-9]*$/;
-
-    if(!expr.test(x.toString())) 
-    {
-      this.step_by_step = 'Please insert a number';
-      return;
-    }
-
+    
     this.parsedNumber = parseInt(x);
 
+    
     this.final_answer = '';
     this.step_by_step = 'Step by step: <br>';
 
     let factor = 2;
     let factor_power = 0;
 
-    if(this.parsedNumber <= 0)
+    if(this.parsedNumber === 0 || this.parsedNumber === 1)
     {
-      this.step_by_step = ''
+      this.step_by_step = 'This number couldn\'t be factorized';
     }
+    else
+      if(this.parsedNumber < 0)
+      {
+        this.step_by_step = 'Please insert a positive number!';
+      }
+      else
+        if(!expr.test(x.toString())) 
+        {
+          this.step_by_step = 'Please insert a number!';
+          return;
+        }
+
+
 
     while(this.parsedNumber > 1){
       while(this.parsedNumber % factor === 0){
@@ -68,10 +76,7 @@ export class PrimFactorizationComponent implements OnInit {
 
   hide(){
     this.modalRef?.hide();
-    window.location.reload();
+    //window.location.reload();
   }
-}
-function template(template: any): BsModalRef<any> {
-  throw new Error('Function not implemented.');
 }
 
