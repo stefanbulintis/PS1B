@@ -13,6 +13,7 @@ import { DocumentationComponent } from './documentation/documentation.component'
 
 import { AngularDocumentationComponent } from './angular-documentation/angular-documentation.component';
 import { PrimeFactorizationDocumentationComponent } from './prime-factorization-documentation/prime-factorization-documentation.component';
+import { HtmlDocumentationComponent } from './html-documentation/html-documentation.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PrimeFactorizationDocumentationComponent } from './prime-factorization-
     HomeComponent,
     DocumentationComponent,
     AngularDocumentationComponent,
-    PrimeFactorizationDocumentationComponent
+    PrimeFactorizationDocumentationComponent,
+    HtmlDocumentationComponent
   ],
   imports: [
     BrowserModule,
