@@ -1,0 +1,12 @@
+.container {
+    font-family: arial;
+    font-size: 24px;
+    width: 350px;
+    height: 200px;
+    padding-top: 50px;
+  }
+  
+  p {
+    /* Center horizontally*/
+    text-align: center;
+  }

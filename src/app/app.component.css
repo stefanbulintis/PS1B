@@ -18,6 +18,14 @@
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
 	height: 100vh;
+    z-index: -1;
+}
+
+.menu{
+    padding-top: 40px;
+    text-align: end;
+    justify-content: space-between;
+    position: relative;
 }
 
 @keyframes gradient {
