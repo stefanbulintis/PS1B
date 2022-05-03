@@ -14,7 +14,6 @@
 .container{
   max-width:90%;
   margin: 0 auto;
-  
 }
 
 /*CARDS*/
@@ -35,7 +34,7 @@ h1{
                   0 0 40px #03bcf4,
                   0 0 80px #03bcf4,
                   0 0 160px #03bcf4;
-      
+
   }
 }
 
@@ -55,7 +54,7 @@ h1{
   text-align: center;
   overflow: hidden;
   cursor:pointer;
-  background-image:url(introducere.png);
+  background: url(htmlintro.png);
   background-position:center;
   background-repeat: no-repeat;
   background-size:cover;
@@ -66,19 +65,19 @@ h1{
 
 
 .card:nth-of-type(2){
-  background-image: url(boxing.jpg);
+  background-image: url(form.png);
 }
 
 .card:nth-of-type(3){
-  background-image: url(regeton.jfif);
+  background-image: url(modal.png);
 }
 
 .card:nth-of-type(4){
-  background-image: url(321.jpeg);
+  background-image: url(butons.png);
 }
 
 .card:nth-of-type(5){
-  background-image: url(123.jpg);
+  background-image: url(tag.png);
 }
 
 .card:hover{
@@ -108,12 +107,15 @@ h2{
   white-space:nowrap;
   margin-top: 100px;
   transform: rotate(-90deg) translateX(-350px);
+  
 }
 
 .card:hover h2{
   padding-bottom: 0.5em;
   transform: unset;
+  text-align: center;
 }
+
 
 p{
   position:absolute;
@@ -131,3 +133,10 @@ p{
   max-height:100%;
   transition-delay: 0.3s;
 }
+
+
+a{
+  text-decoration: none;
+}
+
+
