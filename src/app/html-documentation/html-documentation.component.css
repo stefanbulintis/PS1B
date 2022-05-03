@@ -20,7 +20,7 @@
 /*CARDS*/
 h1{
   font-size: clamp(50px, 10vw, 50px);
-  color: #000000;
+  color: #fff;
   text-transform: uppercase;
   margin-top: 50px;
   text-align: center;
@@ -30,7 +30,7 @@ h1{
   flex-wrap: wrap;
   gap: 2em;
   padding: 2em 0;
-  margin-left: 450px;
+  margin-left: 440px;
 }
 
 .card{
@@ -46,7 +46,8 @@ h1{
   background-position:center;
   background-repeat: no-repeat;
   background-size:cover;
-  border-radius:25px;
+  border-radius:80px;
+  border-color:aqua;
   transition: max-width 0.5s ease-in-out;
 }
 
@@ -103,7 +104,7 @@ h2{
 
 p{
   position:absolute;
-  font-size: 18px;
+  font-size: 15px;
   color: #fff;
   margin:0;
   max-height: 0;
