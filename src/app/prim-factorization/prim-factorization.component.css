@@ -10,7 +10,7 @@
 }
 .btn
 {
-    background-image: linear-gradient(to right, #4568DC 0%, #B06AB3  51%, #4568DC  100%);
+    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5  51%, #00d2ff  100%);
     width: 150px;
     margin-top: 20px;
     padding: 15px 10px;
@@ -23,7 +23,7 @@
     overflow: hidden;
     text-transform: uppercase;
     transition: 0.5s;
-    box-shadow: 0 0 50px #B06AB3;
+    box-shadow: 0 0 50px #00d2ff;
     background-size: 200% auto;
 }
 
@@ -34,12 +34,12 @@
  }
 
 .modal-header{
-    background-image: linear-gradient(to right,#B06AB3  30%, #4568DC  100%);
+    background-image: linear-gradient(to right,#4568DC   30%, #00d2ff  100%);
     
 }
 
 .modal-body{
    
-    background: linear-gradient(to right, #B06AB3  51%, #4568DC  90%);
+    background: linear-gradient(to right, #00d2ff   51%, #4568DC  90%);
 }
 

@@ -28,24 +28,24 @@ export class PrimFactorizationComponent implements OnInit {
 
     
     this.final_answer = '';
-    this.step_by_step = 'Step by step: <br>';
+    this.step_by_step = 'Pas cu pas: <br>';
 
     let factor = 2;
     let factor_power = 0;
 
     if(this.parsedNumber === 0 || this.parsedNumber === 1)
     {
-      this.step_by_step = 'This number couldn\'t be factorized';
+      this.step_by_step = 'Numarul introdus nu poate fi descompus in factori primi!';
     }
     else
       if(this.parsedNumber < 0)
       {
-        this.step_by_step = 'Please insert a positive number!';
+        this.step_by_step = 'Va rugam sa introduceti un numar pozitiv!';
       }
       else
         if(!expr.test(x.toString())) 
         {
-          this.step_by_step = 'Please insert a number!';
+          this.step_by_step = 'Va rugam sa introduceti un numar!';
           return;
         }
 

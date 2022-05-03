@@ -24,6 +24,19 @@ h1{
   text-transform: uppercase;
   margin-top: 50px;
   text-align: center;
+  animation: animate 5s linear infinite;
+}
+@keyframes animate{
+  100%, 0%
+  {
+      color: #fff;
+      text-shadow: 0 0 10px #03bcf4,
+                  0 0 20px #03bcf4,
+                  0 0 40px #03bcf4,
+                  0 0 80px #03bcf4,
+                  0 0 160px #03bcf4;
+      
+  }
 }
 
 .cards{

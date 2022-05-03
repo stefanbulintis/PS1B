@@ -1,7 +1,7 @@
 <form id="myForm">
   <div class ="content">
     <div class="d-flex justify-content-center mt-5">
-        <h4 class="mt-2 text-white">Type an input: </h4>
+        <h4 class="mt-2 text-white">Introduceti un numar natural: </h4>
         <div class="d-flex align-items-start flex-column">
             <div class="p-2"><input  type="text"
                 class="form-control" 
@@ -11,10 +11,10 @@
                 id="number_to_be_factorized" 
                 name="number_to_be_factorized" 
                 onfocus="this.value=''"
-                placeholder="Enter number"></div>
+                placeholder="Introduceti numarul"></div>
 
             <div class="p-2">
-                <button type="button" class="btn" (click)="openModal(template); calculate(number_to_be_factorized.toString())">Calculate
+                <button type="button" class="btn" (click)="openModal(template); calculate(number_to_be_factorized.toString())">Calculeaza
                   <span class="caret"></span>
                 </button>
               
@@ -23,14 +23,14 @@
 
                 <ng-template #template>
                     <div class="modal-header">
-                      <h4 class="modal-title pull-left">Result</h4>
+                      <h4 class="modal-title pull-left">Rezultat</h4>
                       <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="hide()">
                         <span aria-hidden="true" class="visually-hidden">&times;</span>
                       </button>  
                     </div>
                     
                     <div class="modal-body">
-                        <p *ngIf="final_answer">The final answer is: {{number_to_be_factorized}} = {{final_answer}}</p>
+                        <p *ngIf="final_answer">Rezultatul final este: {{number_to_be_factorized}} = {{final_answer}}</p>
                         <div style="text-align: center;" [innerHTML]="step_by_step"></div>
                     </div>
                   </ng-template>

@@ -46,13 +46,8 @@
 }
 
 @keyframes animate{
-    0%, 18%, 20%,50.1%, 60%, 65.1%, 80%, 90.1%, 92%
+    100%, 0%
     {
-        color: #0e3742;
-        text-shadow: none;
-    }
-
-    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
         color: #fff;
         text-shadow: 0 0 10px #03bcf4,
                     0 0 20px #03bcf4,
@@ -67,7 +62,7 @@
 
 button
 {
-    background-image: linear-gradient(to right, #4568DC 0%, #B06AB3  51%, #4568DC  100%);
+    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5  51%, #00d2ff  100%);
     width: 220px;
     margin-top: 50px;
     padding: 15px 10px;
@@ -80,8 +75,9 @@ button
     overflow: hidden;
     text-transform: uppercase;
     transition: 0.5s;
-    box-shadow: 0 0 40px #B06AB3;
+    box-shadow: 0 0 40px #03bcf4;
     background-size: 200% auto;
+    animation: animate 5s linear infinite;
 }
 
  button:hover {
@@ -90,6 +86,8 @@ button
    text-decoration: none;
  }
 
+
+ 
 
 
 
