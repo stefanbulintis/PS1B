@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*,*::before,*,::after{
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+
+.row{
+  display: flex;
+}
+
+.container{
+  max-width:90%;
+  margin: 0 auto;
+}
+
+/*CARDS*/
+h1{
+  font-size: clamp(50px, 10vw, 50px);
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 50px;
+  text-align: center;
+  animation: animate 5s linear infinite;
+}
+@keyframes animate{
+  100%, 0%
+  {
+      color: #fff;
+      text-shadow: 0 0 10px #03bcf4,
+                  0 0 20px #03bcf4,
+                  0 0 40px #03bcf4,
+                  0 0 80px #03bcf4,
+                  0 0 160px #03bcf4;
+
+  }
+}
+
+.cards{
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 2em 0;
+  margin-left: 440px;
+}
+
+.card{
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  max-width: 150px;
+  min-height: 600px;
+  text-align: center;
+  overflow: hidden;
+  cursor:pointer;
+  background: url();
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  border-radius:80px;
+  border-color:aqua;
+  transition: max-width 0.5s ease-in-out;
+}
+
+
+.card:nth-of-type(2){
+  background-image: url();
+}
+
+.card:nth-of-type(3){
+  background-image: url();
+}
+
+.card:nth-of-type(4){
+  background-image: url();
+}
+
+.card:nth-of-type(5){
+  background-image: url();
+}
+
+.card:hover{
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.card-body{
+  background: linear-gradient(100deg rgba(45,45,45,0) 0%, #2d2d2d);
+  padding: 4em;
+}
+
+.title{
+  background: linear-gradient(100deg rgba(45,45,45,0) 0%, #2d2d2d);
+  position:absolute;
+  inset:0;
+}
+
+.card:hover .title{
+  all:unset;
+}
+
+h2{
+  font-size: clamp(38px,5vw,48px);
+  color: #fff;
+  text-transform:uppercase;
+  white-space:nowrap;
+  margin-top: 100px;
+  transform: rotate(-90deg) translateX(-350px);
+  
+}
+
+.card:hover h2{
+  padding-bottom: 0.5em;
+  transform: unset;
+  text-align: center;
+}
+
+
+p{
+  position:absolute;
+  font-size: 15px;
+  color: #fff;
+  margin:0;
+  max-height: 0;
+  opacity:0;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.card:hover p{
+  position:relative;
+  opacity:1;
+  max-height:100%;
+  transition-delay: 0.3s;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+

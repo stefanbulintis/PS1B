@@ -93,6 +93,25 @@ a {
     position: relative;
     box-sizing: border-box;
     margin-left: 900px;
+    animation: float 5s ease-in-out infinite;
+ }
+ 
+a:hover{
+    transform: translateY(0) scale(1.2);
+}
+
+ @keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-15px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
  }
 
 
