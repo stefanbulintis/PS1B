@@ -34,7 +34,6 @@
     text-transform: uppercase;
     width: 50%;
     text-align: center;
-    -webkit-box-reflect:below 1px linear-gradient(transparent, #0004);
     line-height: 0.70em;
     outline:none;
     animation: animate 5s linear infinite;
@@ -64,7 +63,7 @@ button
 {
     background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5  51%, #00d2ff  100%);
     width: 220px;
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 15px 10px;
     text-align: center;
     border-radius: 50px;

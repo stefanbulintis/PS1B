@@ -54,7 +54,7 @@ h1{
   text-align: center;
   overflow: hidden;
   cursor:pointer;
-  background: url();
+  background: url(animatii.png);
   background-position:center;
   background-repeat: no-repeat;
   background-size:cover;
@@ -65,19 +65,19 @@ h1{
 
 
 .card:nth-of-type(2){
-  background-image: url();
+  background-image: url(transform.png);
 }
 
 .card:nth-of-type(3){
-  background-image: url();
+  background-image: url(flexbox.png);
 }
 
 .card:nth-of-type(4){
-  background-image: url();
+  background-image: url(font.png);
 }
 
 .card:nth-of-type(5){
-  background-image: url();
+  background-image: url(selectors.png);
 }
 
 .card:hover{

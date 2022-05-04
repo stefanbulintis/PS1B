@@ -41,6 +41,19 @@
 	}
 }
 
+@keyframes animate{
+    100%, 0%
+    {
+        color: #fff;
+        text-shadow: 0 00 10px #03bcf4,
+                    0 0 20px #03bcf4,
+                    0 0 40px #03bcf4,
+                    0 0 80px #03bcf4,
+                    0 0 160px #03bcf4;
+        
+    }
+}
+
 .logo
 {
     width: 120px;
@@ -62,6 +75,7 @@ ul li a
     text-decoration: none;
     color:white;
     text-transform: uppercase;
+    animation: animate 10s linear infinite;
 }
 
 ul li::after
