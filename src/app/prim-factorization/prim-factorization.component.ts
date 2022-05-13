@@ -56,7 +56,7 @@ export class PrimFactorizationComponent implements OnInit {
         let res = this.parsedNumber / factor;
         factor_power ++;
 
-        this.step_by_step += x.toString() + " % " + factor.toString() + " = " + res.toString() + " ( " + factor.toString() + " ^ " + factor_power.toString() + " )<br>";
+        this.step_by_step += this.parsedNumber.toString() + " % " + factor.toString() + " = " + res.toString() + " ( " + factor.toString() + " ^ " + factor_power.toString() + " )<br>";
 
         this.parsedNumber = this.parsedNumber / factor;
       }
